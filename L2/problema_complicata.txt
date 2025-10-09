@@ -1,0 +1,14 @@
+1.
+Srieti o functie care primeste ca parametru un numar intreg N
+Functia va returna radacina patrata a numarului N, cu 3000 de zecimale
+Nu se folosesc functii de librarie ci doar calcule matematice pe baza de adunare, scadere, inmultire, impartire intreaga si ridicare la putere
+Nu sunt permise puteri fractionare (numere reale cu virgula), functii exponentiale, logaritmice sau altele implementate in librarii specifice (gen math)
+Daca este necesar, unele calcule se pot muta in functii separate
+
+Pentru implementare, urmariti algoritmul Digit-by-digit calculation prezentat aici:
+https://en.wikipedia.org/wiki/Methods_of_computing_square_roots
+
+2.
+Generati permutarea 218553019 a cuvantului format din 6 caractere folosind alfabetul "AEGIJLNOPSUVbdefhimnoprstuvwxy". Primul cuvant este "AAAAAA" iar ultimul este "yyyyyy"
+Care este cuvantul?
+Descrieti 2-3 mecanisme diferite si sortati-le crescator in ordinea performantei pentru a gasi indexul oricarui cuvant dat
