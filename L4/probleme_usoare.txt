@@ -1,0 +1,22 @@
+1. calculati al 2000-lea numar fibonacci, stiind ca primele 2 sunt [0, 1]
+
+2. folosind liste si dictionare, rezolvati urmatorele expresii:
+   4+17-9*2+16/4
+   121*2+15*6-20-21+4-3*4*2
+   36/6+5*2-8-4-2*2*2+2
+
+3. creati un arbore BST in care sa inserati pe rand urmatoarele elemente, apoi afisati grafic arborele si traversati in-ordine arborele
+   BST - simplu [50,30,70,20,40,60,80,10,90,5,100,2,7,1,3]
+   Folosind tehnica de afisare de la punctul 4, afisati arborele BST
+
+4. creati un arbore AST pentru expresia de mai jos, apoi rezolvati expresia si afisati arborele AST
+   AST - expresie: 13*2-11+5+21/7
+   pentru afisare folosim fie formatul DOT de la GraphViz, sau formatul GDL de la IDA (wingraph32.exe): https://ida.software.informer.com/download/#downloading
+   pentru formatul DOT avem un fisier ca exemplu (ceva.gdl). Ar trebui sa obtineti acelasi lucru in urma executiei codului
+
+5. scrieti un script cu care sa afisati in mod text/ASCII fisierul python.bmp, urmarind formatul bmp de aici: https://en.wikipedia.org/wiki/BMP_file_format
+   va trebui sa mapam paleta de culori la un alfabet definit de noi
+
+
+
+

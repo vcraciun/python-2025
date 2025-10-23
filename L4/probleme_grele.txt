@@ -1,0 +1,23 @@
+1. Se da fisierul traversals.json cu urmatoarea structura:
+   {
+	 "categorie_size_target": {
+		"categorie_size_sursa": {
+			"hash": {
+				"traversal": [list_of_values],
+				"funcs": {
+					"adresa_functie": [array_of_files]
+				}
+			}
+		}
+	 }
+   }
+
+Cerinte:
+a) Listati adresele si numele functiilor care se gasesc in fisierul 
+   cu versiunea 5_0_0_25 si nu se gasesc in fisierul cu versiunea 5_0_0_26, si invers
+b) listati numele functiilor care se gasesc in ambele versiuni de fisiere si au hash diferit
+c) pentru b, identificati 2 grupari de perechi in baza indicelui de corelatie pearson
+   >=95% si <95% si generati fisiere png in care sa plotati comparatiile + indicele de corelatie
+   - pentru corelatie folosim numpy.corrcoef(numpy.array(lista1), numpy.array(lista2)) din numpy sau pandas.Series(lista_1).corr(pandas.Series(lista2)) din pandas\
+   - pentru plotare folosim matplotlib
+d) verificati daca exista functii care sa aiba hash similar si listati nume_func+hash+versiune in caz ca da
