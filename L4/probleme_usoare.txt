@@ -16,7 +16,3 @@
 
 5. scrieti un script cu care sa afisati in mod text/ASCII fisierul python.bmp, urmarind formatul bmp de aici: https://en.wikipedia.org/wiki/BMP_file_format
    va trebui sa mapam paleta de culori la un alfabet definit de noi
-
-
-
-

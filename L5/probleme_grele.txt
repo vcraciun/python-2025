@@ -1,0 +1,18 @@
+1. Folosind alfabetul "9876543210qazwsxedcrfvtgbyhnujmikolpQAZWSXEDCRFVTGBYHNUJMIKOLP" si urmatorul cod pentru generat numere random, 
+s-a creat o parola de 64 de caractere cu care s-a arhivat un folder cu poze. Aflati parola si dezarhivati continutul. 
+
+Exemplu utilizare PRNG:  
+
+class PRNG:
+    def __init__(self, seed = 327680):
+        self.seed = seed
+        self.a = 4291010243
+        self.c = 179203
+
+    def random(self):
+        self.seed = (self.a - self.seed * self.c) % 16777216
+        rnd = self.seed / 16777216
+        return rnd
+
+rand = PRNG(0)
+passw = "".join([alfabet[int(rand.random()*100) % len(alfabet)] for i in range(64)])
