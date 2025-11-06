@@ -1,7 +1,7 @@
 import os
 
 path = "imaginibmp"
-alfabet = "#. $&*!"
+alfabet = "#+ ++++"
 
 for fn in os.listdir(path):
     full_fn = os.path.join(path, fn)
