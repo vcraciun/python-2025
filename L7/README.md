@@ -2,25 +2,15 @@
    Aceste serii trebuie clusterizate (gasit numarul optim  de grupari din care fac parte) folosind KMeans (un algoritm de invatare ne-supervizata) si chat-GPT
 
 Ce stim:
-a) folosim KMeans
-b) deoarece KMeans foloseste o distanta pentru a construi grupari in baza distantei, va trebui si noi sa utilizam o astfel de distanta.
-   Distantele posibile ar fi: 
-   - Euclidean
-   - Cosinus
-   - K-Shape
-   - Soft-DTW (dynamic time warping)
-   - DBA (DTW Barycenter Averaging)
-c) pentru a calcula numarul optim de clustere se foloseste algoritmul "silhouette analysis" pentru a obtine cate o valoare pentru un numar de clustere intre 2 si 20. Valoarea cea mai mare este pentru numarul optim de clustere
-d) deoarece seriile au lungimi diferite vom efectua normalizare + resampling (reducand la dimensiunea seriei celei mai mici) si in domeniul y (-1,+1)
-e) numarul de clustere nu poate fi mai mare de 14 si nici mai mic 3, daca cumva obtinem o valoare mai buna pentru analiza siluetei >= 14, atunci luam cea mai mare valoare < 14
-f) vom folosi toti algoritmii de distanta si vom alege numarul de clustere cel mai mic dintre toti
-g) la final vom plota clusterele intr-o matrice specifica numarului gasit
-   <=4 -  2x2
-   5-6 -  3x2
-   7-9 -  3x3
-   10-12- 4x3
-h) plotarea finala se face cu o culoare gri sau galben deschis pentru serii si cu rosu sau albastru inchis pentru centroid
-g) incarcarea seriilor se face din fisierul "serii.json" care contine o lista de liste
-h) atat graficul de la analiza siluetei pentru cele 5 distante cat si clusterele finale, vor fi scrise in fisiere cu extensia .png
-i) graficele trebuie sa aiba si grid (plt.grid())
-j) folosind indexii seriilor din clusterele gasite, plotati in grafice separate seriile initiale care nu au fost normalizate/resampled
+- folosim KMeans
+- deoarece KMeans foloseste o distanta pentru a construi grupari in baza distantei, va trebui si noi sa utilizam o astfel de distanta. Distantele posibile ar fi: Euclidean, Cosinus, K-Shape, Soft-DTW, DBA
+- pentru a calcula numarul optim de clustere se foloseste algoritmul "silhouette analysis" pentru a obtine cate o valoare pentru un numar de clustere intre 2 si 20. Valoarea cea mai mare este pentru numarul optim de clustere
+- deoarece seriile au lungimi diferite vom efectua normalizare + resampling (reducand la dimensiunea seriei celei mai mici) si in domeniul y (-1,+1)
+- numarul de clustere nu poate fi mai mare de 14 si nici mai mic 3, daca cumva obtinem o valoare mai buna pentru analiza siluetei >= 14, atunci luam cea mai mare valoare < 14
+- vom folosi toti algoritmii de distanta si vom alege numarul de clustere cel mai mic dintre toti
+- la final vom plota clusterele intr-o matrice specifica numarului gasit: (<=4 -  2x2), (5-6 -  3x2), (7-9 -  3x3), (10-12- 4x3)
+- plotarea finala se face cu o culoare gri sau galben deschis pentru serii si cu rosu sau albastru inchis pentru centroid
+- incarcarea seriilor se face din fisierul "serii.json" care contine o lista de liste
+- atat graficul de la analiza siluetei pentru cele 5 distante cat si clusterele finale, vor fi scrise in fisiere cu extensia .png
+- graficele trebuie sa aiba si grid (plt.grid())
+- folosind indexii seriilor din clusterele gasite, plotati in grafice separate seriile initiale care nu au fost normalizate/resampled
