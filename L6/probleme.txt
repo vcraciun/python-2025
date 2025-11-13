@@ -17,5 +17,5 @@ class PRNG:
 rand = PRNG(0)
 passw = "".join([alfabet[int(rand.random()*100) % len(alfabet)] for i in range(64)])
 
-3. CUI - dupa model   
+3. aplicatie CUI - dupa model din poza
 
